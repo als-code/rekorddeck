@@ -2,16 +2,23 @@
 
 Necesitas **dos** medios: **SteamOS Recovery** e **instalador Windows**.
 
-Herramienta: [Rufus](https://rufus.ie/en/).
+## Descargas oficiales Valve
 
-1. Descarga Recovery (FAQ Valve) e ISO Windows 10/11 Pro.  
-2. Rufus → USB/SD → ISO → **Start**.  
-3. Repite con el segundo medio.  
-4. Copia los **drivers Valve** (LCD u OLED) descomprimidos al USB de Windows.
+- [Imagen SteamOS Recovery](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB8D-2BA0)  
+- [Drivers Windows para Steam Deck](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8) (LCD u OLED — descomprime los ZIP)
+
+También: ISO de **Windows 10/11 Pro** desde Microsoft / tu canal legal.
+
+Herramienta: [Rufus](https://rufus.ie/en/). Recovery suele ser `.img` — en Rufus usa modo **DD Image** si lo pide (no grabación ISO normal).
+
+1. Descarga Recovery + drivers desde los enlaces Valve de arriba, y tu ISO de Windows.  
+2. Rufus → USB/SD → imagen Recovery → **Start**.  
+3. Repite con el segundo medio para la ISO de Windows.  
+4. Copia los **drivers Valve** descomprimidos al USB de Windows.
 
 ## Comprobar
 
-- [ ] Recovery arranca en el Deck  
+- [ ] Recovery arranca en el Deck (Vol− + Power)  
 - [ ] USB Windows muestra el setup  
 - [ ] Carpeta de drivers en el USB  
 
