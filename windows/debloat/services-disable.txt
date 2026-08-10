@@ -1,0 +1,12 @@
+# Services to set as Disabled (service name). Never list AudioSrv, usb*, PlugPlay, Wuauserv.
+# One name per line
+
+Fax
+XblAuthManager
+XblGameSave
+XboxGipSvc
+XboxNetApiSvc
+WMPNetworkSvc
+RemoteRegistry
+DiagTrack
+dmwappushservice

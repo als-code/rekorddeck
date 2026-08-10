@@ -1,0 +1,25 @@
+# AppX / provisioned packages to remove (one package family name per line)
+# Comments start with #. Auditable allowlist for Invoke-DjDebloat.ps1
+
+Microsoft.BingNews
+Microsoft.BingWeather
+Microsoft.GetHelp
+Microsoft.Getstarted
+Microsoft.MicrosoftOfficeHub
+Microsoft.MicrosoftSolitaireCollection
+Microsoft.People
+Microsoft.WindowsFeedbackHub
+Microsoft.Xbox.TCUI
+Microsoft.XboxApp
+Microsoft.XboxGameOverlay
+Microsoft.XboxGamingOverlay
+Microsoft.XboxIdentityProvider
+Microsoft.XboxSpeechToTextOverlay
+Microsoft.YourPhone
+Microsoft.ZuneMusic
+Microsoft.ZuneVideo
+microsoft.windowscommunicationsapps
+Microsoft.GamingApp
+Microsoft.Todos
+Microsoft.PowerAutomateDesktop
+Clipchamp.Clipchamp
