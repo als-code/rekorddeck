@@ -12,7 +12,7 @@
 
 - Legitimate **Windows 10 Pro or 11 Pro** license  
 - Windows ISO from Microsoft / your legal channel  
-- [SteamOS recovery image](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB8D-2BA0)  
+- [SteamOS recovery image](https://help.steampowered.com/en/faqs/view/65B4-2AA3-5F37-4227)  
 - [Steam Deck Windows drivers](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8)  
 - [Rufus](https://rufus.ie/en/)  
 - [SteamDeck_rEFInd](https://github.com/jlobue10/SteamDeck_rEFInd)  

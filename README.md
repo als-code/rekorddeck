@@ -2,7 +2,7 @@
 
 > **Pre-alpha 0.3 / WIP — proceed at your own risk.**  
 > Dual-boot and partitioning can leave the Deck unbootable. Back up first; keep
-> [SteamOS recovery](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB8D-2BA0) ready.  
+> [SteamOS recovery](https://help.steampowered.com/en/faqs/view/65B4-2AA3-5F37-4227) ready.  
 > **Pre-alpha 0.3 / WIP — usa bajo tu propio riesgo.** Haz backup y ten Recovery a mano.
 
 **Guide + scripts** for **SteamOS ↔ Windows dual-boot** on Steam Deck for DJs

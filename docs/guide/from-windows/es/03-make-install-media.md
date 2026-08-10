@@ -4,7 +4,7 @@ Necesitas **dos** medios: **SteamOS Recovery** e **instalador Windows**.
 
 ## Descargas oficiales Valve
 
-- [Imagen SteamOS Recovery](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB8D-2BA0)  
+- [Imagen SteamOS Recovery](https://help.steampowered.com/en/faqs/view/65B4-2AA3-5F37-4227)  
 - [Drivers Windows para Steam Deck](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8) (LCD u OLED — descomprime los ZIP)
 
 También: ISO de **Windows 10/11 Pro** desde Microsoft / tu canal legal.
