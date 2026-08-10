@@ -81,7 +81,7 @@ New-DeskFolder 'Rekorddeck - Audio Drivers' 'audio-interfaces.md' | Out-Null
 New-DeskFolder 'Rekorddeck - USB Hubs' 'usb-hubs.md' | Out-Null
 $djFolder = New-DeskFolder 'Rekorddeck - DJ Software' 'dj-software.md'
 
-# Shortcut that does not depend on a local clone / temp path
+# Shortcuts that do not depend on a local clone / temp path
 $cmdPath = Join-Path $djFolder 'Install-Rekordbox6.cmd'
 @"
 @echo off
@@ -89,6 +89,23 @@ echo Opening official rekordbox 6 archive (AlphaTheta / Pioneer)...
 start "" "https://support.pioneerdj.com/hc/en-us/articles/8112764645785-I-want-to-use-previous-rekordbox-ver-6"
 pause
 "@ | Set-Content -Path $cmdPath -Encoding ASCII
+
+$gigRaw = 'https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/Set-RekorddeckGigMode.ps1'
+$gigEnable = Join-Path $djFolder 'GigMode-Enable.cmd'
+@"
+@echo off
+echo Rekorddeck Gig Mode ON — starts rekordbox after logon (delayed, maximized).
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& ([scriptblock]::Create((irm '$gigRaw'))) -Enable"
+pause
+"@ | Set-Content -Path $gigEnable -Encoding ASCII
+
+$gigDisable = Join-Path $djFolder 'GigMode-Disable.cmd'
+@"
+@echo off
+echo Rekorddeck Gig Mode OFF — remove Startup launcher.
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& ([scriptblock]::Create((irm '$gigRaw'))) -Disable"
+pause
+"@ | Set-Content -Path $gigDisable -Encoding ASCII
 
 $valveFolder = Join-Path $DesktopPath 'Rekorddeck - Valve & Dual-boot'
 New-Item -ItemType Directory -Force -Path $valveFolder | Out-Null

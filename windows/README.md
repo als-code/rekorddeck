@@ -16,6 +16,10 @@ irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap
 # Desktop pack (.url folders)
 irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-desktop.ps1 | iex
 
+# Gig Mode — start rekordbox after logon (opt-in)
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/Set-RekorddeckGigMode.ps1))) -Enable
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/Set-RekorddeckGigMode.ps1))) -Disable
+
 # Open rekordbox 6 official archive
 irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-rekordbox6.ps1 | iex
 ```
@@ -33,6 +37,7 @@ start https://support.pioneerdj.com/hc/en-us/articles/8112764645785-I-want-to-us
 | `bootstrap-dj-debloat.ps1` | Download + run debloat |
 | `bootstrap-dj-desktop.ps1` | Download + create Desktop link packs |
 | `bootstrap-rekordbox6.ps1` | Download + open rekordbox 6 pages |
+| `Set-RekorddeckGigMode.ps1` | Opt-in: enable/disable rekordbox autostart |
 | `Invoke-DjDebloat.ps1` | Debloat core (used by bootstrap) |
 | `New-RekorddeckDesktop.ps1` | Desktop pack core |
 | `Install-Rekordbox6.ps1` | Opens official archive URLs |
