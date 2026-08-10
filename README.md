@@ -1,83 +1,77 @@
 # Rekorddeck
 
-> **Pre-alpha 0.3 / WIP — usa bajo tu propio riesgo.**  
-> Dual-boot y particionado pueden dejar el Deck inutilizable si algo sale mal.
-> Haz backup, ten a mano la [imagen de recuperación SteamOS](https://help.steampowered.com/es/faqs/view/1B71-EDF2-EB8D-2BA0)
-> y no asumas que esta guía está probada al 100 % en hardware real.  
-> **Pre-alpha 0.3 / WIP — proceed at your own risk.** Dual-boot and partitioning can
-> leave the Deck unbootable if something goes wrong. Back up first; keep SteamOS
-> recovery media ready.
-
-Guía + scripts para **dual-boot SteamOS ↔ Windows** en Steam Deck, orientado a DJs
-(**rekordbox 6** + ASIO). SteamOS se queda para jugar.
+> **Pre-alpha 0.3 / WIP — proceed at your own risk.**  
+> Dual-boot and partitioning can leave the Deck unbootable. Back up first; keep
+> [SteamOS recovery](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB8D-2BA0) ready.  
+> **Pre-alpha 0.3 / WIP — usa bajo tu propio riesgo.** Haz backup y ten Recovery a mano.
 
 **Guide + scripts** for **SteamOS ↔ Windows dual-boot** on Steam Deck for DJs
 (**rekordbox 6** + ASIO). Keep SteamOS for gaming.
 
+Guía + scripts para dual-boot en Steam Deck orientado a DJs.
+
 ---
 
-## Guías / Guides
+## Guides (English first)
 
-| Idioma | Empezar aquí |
-|--------|----------------|
-| **Español** (canónico) | [docs/guide/es/01-overview.md](docs/guide/es/01-overview.md) |
-| **English** | [docs/guide/en/01-overview.md](docs/guide/en/01-overview.md) |
-| Índice | [docs/guide/README.md](docs/guide/README.md) |
-| Estado / gaps | [es/00-status](docs/guide/es/00-status.md) · [en/00-status](docs/guide/en/00-status.md) |
+Pick the guide that matches the PC you use to write USB/SD media:
 
-## Ruta recomendada / Recommended path
+| Host PC | English | Español |
+|---------|---------|---------|
+| **Windows** | [from-windows/en/01-overview](docs/guide/from-windows/en/01-overview.md) | [from-windows/es/01-overview](docs/guide/from-windows/es/01-overview.md) |
+| **Linux** | [from-linux/en/01-overview](docs/guide/from-linux/en/01-overview.md) | [from-linux/es/01-overview](docs/guide/from-linux/es/01-overview.md) |
 
-1. Medios USB desde **PC Windows (Rufus)** o **Linux (Ventoy/dd)**  
+Index: [docs/guide/README.md](docs/guide/README.md)
+
+## Recommended path
+
+1. Write Recovery + Windows media on your **Windows or Linux** PC  
 2. SteamOS update + password → **rEFInd**  
-3. Particionar desde **SteamOS Recovery** → instalar **Win10/11 Pro**  
-4. Drivers Valve → bootnext oficial rEFInd → cerrar dual-boot  
-5. Debloat (Pro) → pack escritorio → ASIO → rekordbox  
+3. Partition from **SteamOS Recovery** → install **Win10/11 Pro**  
+4. Valve drivers → official rEFInd bootnext → finalize dual-boot  
+5. Debloat (Pro) → desktop pack → ASIO → rekordbox  
 
-**LTSC 2021:** solo usuarios avanzados (sin guía de obtención de medios/licencia).
+**LTSC 2021:** advanced users only (no acquisition guide).
 
-## Requisitos / Requirements
+## Requirements
 
-- Steam Deck LCD u OLED (ideal ≥256 GB)  
-- ≥64 GB para Windows (recomendado 80 GB+); biblioteca en SD/USB  
-- 2× USB/SD ≥8 GB, hub USB-C, teclado  
-- Licencia **legítima** de Windows 10/11 Pro  
-- PC Windows **o** Linux para grabar ISOs  
+- Steam Deck LCD or OLED (ideally ≥256 GB)  
+- ≥64 GB for Windows (80 GB+ recommended); library on SD/USB  
+- USB/SD media, USB-C hub, keyboard  
+- Legitimate Windows 10/11 Pro license  
+- A Windows **or** Linux PC to write ISOs  
 
-## Capturas / Screenshots
+## Screenshots
 
-Placeholders (añade fotos reales cuando existan):
+Placeholders: [docs/assets/PLACEHOLDERS.md](docs/assets/PLACEHOLDERS.md)  
+Stands: [hardware/stands.en.md](hardware/stands.en.md) · [stands.es.md](hardware/stands.es.md)
 
-| Visual | Archivo |
-|--------|---------|
-| Menú rEFInd | [docs/assets/PLACEHOLDERS.md](docs/assets/PLACEHOLDERS.md) |
-| Escritorio DJ (pack) | idem |
-| Stand Deck ↔ controladora | [hardware/stands.es.md](hardware/stands.es.md) / [stands.en.md](hardware/stands.en.md) |
+## Scripts (Windows side)
 
-## Scripts (Windows)
+After dual-boot is stable — [windows/README.md](windows/README.md) · [README.es.md](windows/README.es.md)
 
-Tras dual-boot estable — detalle: [windows/README.md](windows/README.md) · [windows/README.es.md](windows/README.es.md)
-
-- `Invoke-DjDebloat.ps1` — solo Pro  
+- `Invoke-DjDebloat.ps1` — Pro only  
 - `New-RekorddeckDesktop.ps1`  
 - `Install-Rekordbox6.ps1`  
 
-## Aviso legal / Legal
+## Legal
 
-- Activa Windows con **tu** licencia. No documentamos activadores (p. ej. MAS).  
-- No redistribuimos drivers Valve ni instaladores DJ — solo enlaces oficiales.  
-- Dual-boot fix: solo [SteamDeck_rEFInd](https://github.com/jlobue10/SteamDeck_rEFInd) (no MediaFire).  
+- Activate Windows with **your** license. No third-party activators (e.g. MAS).  
+- We do not redistribute Valve drivers or DJ installers — official links only.  
+- Dual-boot fix: [SteamDeck_rEFInd](https://github.com/jlobue10/SteamDeck_rEFInd) only (not MediaFire).  
 
-## Créditos / Credits
+## Credits
 
 - [jlobue10/SteamDeck_rEFInd](https://github.com/jlobue10/SteamDeck_rEFInd)  
-- Companion visual opcional: [vídeo dual-boot comunidad](https://www.youtube.com/watch?v=yBHzVSDVEqw)  
-- [Drivers Valve](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8)  
+- Optional companion video: [community dual-boot walkthrough](https://www.youtube.com/watch?v=yBHzVSDVEqw)  
+- [Valve Windows drivers](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8)  
 
-## Estructura
+## Layout
 
 ```text
-docs/guide/es|en/   # capítulos 00–17
-docs/assets/        # capturas (placeholders)
-windows/            # scripts PowerShell
-hardware/           # stands 3D
+docs/guide/from-windows/{en,es}/   # guide when preparing media on Windows
+docs/guide/from-linux/{en,es}/     # guide when preparing media on Linux
+docs/assets/                       # screenshots (placeholders)
+windows/                           # PowerShell helpers
+hardware/                          # 3D stands
 ```
