@@ -81,12 +81,12 @@ New-DeskFolder 'Rekorddeck - Audio Drivers' 'audio-interfaces.md' | Out-Null
 New-DeskFolder 'Rekorddeck - USB Hubs' 'usb-hubs.md' | Out-Null
 $djFolder = New-DeskFolder 'Rekorddeck - DJ Software' 'dj-software.md'
 
-# Shortcut to Install-Rekordbox6.ps1
-$ps1 = Join-Path $PSScriptRoot 'Install-Rekordbox6.ps1'
+# Shortcut that does not depend on a local clone / temp path
 $cmdPath = Join-Path $djFolder 'Install-Rekordbox6.cmd'
 @"
 @echo off
-powershell -NoProfile -ExecutionPolicy Bypass -File "$ps1"
+echo Opening official rekordbox 6 archive (AlphaTheta / Pioneer)...
+start "" "https://support.pioneerdj.com/hc/en-us/articles/8112764645785-I-want-to-use-previous-rekordbox-ver-6"
 pause
 "@ | Set-Content -Path $cmdPath -Encoding ASCII
 

@@ -1,11 +1,12 @@
 # 13 — DJ desktop pack
 
+PowerShell (no clone):
+
 ```powershell
-cd path\to\rekorddeck\windows
-.\New-RekorddeckDesktop.ps1
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-desktop.ps1 | iex
 ```
 
-Creates Desktop folders with official `.url` shortcuts.
+Creates Desktop folders with official `.url` shortcuts (audio, hubs, DJ software, Valve/rEFInd).
 
 Next: [ASIO](14-audio-asio.md).
 

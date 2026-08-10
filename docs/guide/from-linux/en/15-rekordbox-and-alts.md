@@ -1,14 +1,29 @@
 # 15 — rekordbox 6 and alternatives
 
-```powershell
-cd path\to\rekorddeck\windows
-.\Install-Rekordbox6.ps1
+No clone needed. Pick one:
+
+**CMD / Run dialog**
+
+```cmd
+start https://support.pioneerdj.com/hc/en-us/articles/8112764645785-I-want-to-use-previous-rekordbox-ver-6
 ```
 
-Opens the [official v6 archive](https://support.pioneerdj.com/hc/en-us/articles/8112764645785-I-want-to-use-previous-rekordbox-ver-6).  
-Current portal: [rekordbox.com/download](https://rekordbox.com/en/download/).
+**PowerShell**
 
-Alternatives via desktop pack: Traktor, VirtualDJ, Serato.
+```powershell
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-rekordbox6.ps1 | iex
+
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-rekordbox6.ps1))) -OpenLatestPortal
+```
+
+Or:
+
+```powershell
+Start-Process 'https://support.pioneerdj.com/hc/en-us/articles/8112764645785-I-want-to-use-previous-rekordbox-ver-6'
+```
+
+Current portal: [rekordbox.com/download](https://rekordbox.com/en/download/).  
+Alternatives: [desktop pack](13-dj-desktop-pack.md).
 
 Next: [Recovery](16-recovery-and-updates.md).
 

@@ -48,12 +48,17 @@ Stands: [hardware/stands.en.md](hardware/stands.en.md) · [stands.es.md](hardwar
 
 ## Scripts (Windows side)
 
-After dual-boot is stable — [windows/README.md](windows/README.md) · [README.es.md](windows/README.es.md)
+No clone required — copy-paste into PowerShell (details: [windows/README.md](windows/README.md) · [README.es.md](windows/README.es.md)):
 
-- `bootstrap-dj-debloat.ps1` — one-liner (no clone)  
-- `Invoke-DjDebloat.ps1` — Pro only  
-- `New-RekorddeckDesktop.ps1`  
-- `Install-Rekordbox6.ps1`  
+```powershell
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1 | iex
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-desktop.ps1 | iex
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-rekordbox6.ps1 | iex
+```
+
+- `bootstrap-dj-debloat.ps1` — Pro debloat (`-Apply` to enforce)  
+- `bootstrap-dj-desktop.ps1` — Desktop `.url` packs  
+- `bootstrap-rekordbox6.ps1` — open official rekordbox 6 archive  
 
 ## Legal
 
