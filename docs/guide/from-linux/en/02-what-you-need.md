@@ -4,7 +4,7 @@
 
 - Steam Deck (LCD or OLED), ideally **≥256 GB** internal  
 - Windows partition: **≥64 GB**, recommended **80 GB+**  
-- **2** USB sticks or microSDs ≥8 GB (or one Ventoy stick holding both ISOs)  
+- **2** USB sticks or microSDs ≥8 GB (**Recovery must be its own stick** — not Ventoy; Windows stick can use Ventoy)  
 - USB-C hub + keyboard  
 - A **Linux PC** to write images  
 

@@ -14,7 +14,7 @@ Pre-alpha — untested end-to-end on every Deck revision.
 
 ## Canonical order
 
-1. Make Recovery + Windows USBs on a **Linux PC** (Ventoy / `dd` / woeusb)  
+1. Make Recovery + Windows USBs on a **Linux PC** (Recovery = dedicated `dd`/Etcher stick; Windows = Ventoy / woeusb OK)  
 2. Update SteamOS + sudo password  
 3. Install rEFInd on SteamOS  
 4. Partition from **SteamOS Recovery**  

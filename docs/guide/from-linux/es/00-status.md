@@ -13,7 +13,7 @@
 
 ## Orden canónico
 
-1. Medios Recovery + Windows en **PC Linux** (Ventoy / `dd` / woeusb)  
+1. Medios Recovery + Windows en **PC Linux** (Recovery = stick dedicado `dd`/Etcher; Windows = Ventoy / woeusb OK)  
 2. Update SteamOS + password → rEFInd → partición Recovery → Windows  
 3. Drivers → bootnext → capa DJ  
 

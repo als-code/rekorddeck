@@ -2,7 +2,7 @@
 
 - Steam Deck (LCD/OLED), ideal ≥256 GB  
 - Partición Windows ≥64 GB (recomendado 80 GB+)  
-- USB/SD (≥8 GB); Ventoy puede llevar ambas ISOs  
+- USB/SD (≥8 GB) × **2**: Recovery en stick dedicado (`dd`/Etcher); Windows puede ir en Ventoy  
 - Hub USB-C + teclado  
 - Un **PC Linux** + Ventoy y/o `dd` / woeusb-ng  
 - Licencia legítima Win10/11 Pro, ISO Windows, [Recovery SteamOS](https://help.steampowered.com/en/faqs/view/65B4-2AA3-5F37-4227), [drivers Valve](https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8), [SteamDeck_rEFInd](https://github.com/jlobue10/SteamDeck_rEFInd)  

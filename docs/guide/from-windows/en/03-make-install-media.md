@@ -1,6 +1,7 @@
 # 03 — Make install media (Windows PC)
 
-You need **two** media: **SteamOS Recovery** and **Windows installer**.
+You need **two** separate media: **SteamOS Recovery** and **Windows installer**.
+Do **not** put Recovery on Ventoy — Valve’s file is a raw `.img` (after decompressing `.img.bz2`); use Rufus **DD Image** on its own stick.
 
 ## Official Valve downloads
 

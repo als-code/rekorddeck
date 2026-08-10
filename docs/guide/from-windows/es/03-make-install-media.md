@@ -1,6 +1,7 @@
 # 03 — Crear medios (PC Windows)
 
-Necesitas **dos** medios: **SteamOS Recovery** e **instalador Windows**.
+Necesitas **dos** medios separados: **SteamOS Recovery** e **instalador Windows**.
+**No** pongas Recovery en Ventoy — Valve da un `.img` crudo (tras descomprimir `.img.bz2`); usa Rufus en modo **DD Image** en un stick propio.
 
 ## Descargas oficiales Valve
 
