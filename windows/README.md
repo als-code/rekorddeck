@@ -4,9 +4,22 @@ Run these **on the Steam Deck Windows side** from an elevated PowerShell when no
 
 | Script | Purpose |
 |--------|---------|
-| `Invoke-DjDebloat.ps1` | Lean **Win10/11 Pro** for live audio (auto-skips LTSC advanced installs) |
+| `bootstrap-dj-debloat.ps1` | One-liner entry: download + run debloat (**no clone**) |
+| `Invoke-DjDebloat.ps1` | Lean **Win10/11 Pro** for live audio (auto-skips LTSC) |
 | `New-RekorddeckDesktop.ps1` | Desktop folders with official `.url` shortcuts |
 | `Install-Rekordbox6.ps1` | Opens official rekordbox 6 archive / download portal |
+
+## One-liner (no clone)
+
+Elevated PowerShell:
+
+```powershell
+# Dry-run
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1 | iex
+
+# Apply
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1))) -Apply
+```
 
 ## Execution policy
 

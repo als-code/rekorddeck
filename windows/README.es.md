@@ -4,9 +4,22 @@ Ejecuta estos scripts **en el lado Windows del Deck**, con PowerShell elevado cu
 
 | Script | Para qué |
 |--------|----------|
+| `bootstrap-dj-debloat.ps1` | One-liner: descarga + ejecuta debloat (**sin clonar**) |
 | `Invoke-DjDebloat.ps1` | Aligerar **Win10/11 Pro** para audio en vivo (hace skip en LTSC) |
 | `New-RekorddeckDesktop.ps1` | Carpetas en el Escritorio con `.url` oficiales |
 | `Install-Rekordbox6.ps1` | Abre el archivo oficial de rekordbox 6 |
+
+## One-liner (sin clonar)
+
+PowerShell elevado:
+
+```powershell
+# Dry-run
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1 | iex
+
+# Aplicar
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1))) -Apply
+```
 
 ## Política de ejecución
 

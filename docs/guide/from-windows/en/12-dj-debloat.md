@@ -1,12 +1,25 @@
 # 12 — DJ debloat (Pro only)
 
-Elevated PowerShell, repo checked out:
+In an **elevated** PowerShell, without cloning the repo:
+
+```powershell
+# Dry-run (no changes)
+irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1 | iex
+
+# Apply changes
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1))) -Apply
+
+# Apply + lighter UI
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/als-code/rekorddeck/main/windows/bootstrap-dj-debloat.ps1))) -Apply -VisualLite
+```
+
+The bootstrap downloads the script and `debloat/` allowlists into a temp folder, then runs them.
+
+**Alternative** (repo already cloned):
 
 ```powershell
 cd path\to\rekorddeck\windows
-.\Invoke-DjDebloat.ps1
 .\Invoke-DjDebloat.ps1 -Apply
-.\Invoke-DjDebloat.ps1 -Apply -VisualLite
 ```
 
 LTSC: script exits with no changes.

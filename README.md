@@ -50,6 +50,7 @@ Stands: [hardware/stands.en.md](hardware/stands.en.md) · [stands.es.md](hardwar
 
 After dual-boot is stable — [windows/README.md](windows/README.md) · [README.es.md](windows/README.es.md)
 
+- `bootstrap-dj-debloat.ps1` — one-liner (no clone)  
 - `Invoke-DjDebloat.ps1` — Pro only  
 - `New-RekorddeckDesktop.ps1`  
 - `Install-Rekordbox6.ps1`  
